@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap');
+
+body {
+    background-color: #FCEBB6;
+    font-family: 'Oswald', sans-serif;
+}
+
+#wrapper {
+    background-color: #FEFAEB;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    
+}
+
+header {
+    background-color: #d2b48c;
+    color: #8C3826;
+    text-align: center;
+}
+h1 {
+    height: 200%;
+}
+
+h2 {
+    color: #8C3826
+}
+
+nav {
+    text-align: center;
+    font-weight: bold;
+}
+
+footer {
+    background-color: #d2B48C;
+    font-size: .60em;
+    font-style: italic;
+}
+
+
