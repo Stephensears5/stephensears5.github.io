@@ -1,125 +1,192 @@
-@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:wght@500&display=swap");
 
 body {
-	display: grid;
-	grid-template-areas:
-		"header header"
-		"nav nav"
-		"main main"
-		"footer footer";
-	grid-template-rows: 100px 60px 1fr 60px;
-	grid-template-columns: 15% 1fr;
-	height: 100vh;
-	font-family: 'Fira Sans', sans-serif;
-	margin: 0 auto;
+  display: grid;
+  grid-template-areas:
+    "header header"
+    "nav nav"
+    "main main"
+    "footer footer";
+  grid-template-rows: 100px 60px 1fr 60px;
+  grid-template-columns: 15% 1fr;
+  height: 100vh;
+  font-family: "Fira Sans", sans-serif;
+  margin: 0 auto;
 }
 
 /* Styles */
 
 header {
-	background-color: #011946;
-	padding: 10px 20px;
+  background-color: #909090;
+  padding: 10px 20px;
 }
 
-footer, main, nav {
-	padding: 20px;
+footer,
+main,
+nav {
+  padding: 20px;
 }
 
-nav, footer {
-	background-color: #c2d5db;
+nav,
+footer {
+  /* background: rgb(151,251,87); */
+  background: linear-gradient(
+    0deg,
+    rgba(151, 251, 87, 1) 0%,
+    rgba(18, 18, 18, 1) 100%
+  );
 }
 
 #pageHeader {
-	grid-area: header;
-	position: sticky;
-	top: 0;
-	left: 0;
-	z-index: 100;
+  grid-area: header;
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 100;
 }
 
 #mainLogo {
-	height: 80px;
+  height: 80px;
 }
 
 #mainContent {
-	grid-area: main;
+  grid-area: main;
+  background-image: url(green-coding.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 #pageFooter {
-	grid-area: footer;
+  grid-area: footer;
 }
 
 #mainNav {
-	grid-area: nav;
-	border-bottom: 2px solid #011946;
+  grid-area: nav;
+  border-bottom: 2px solid #011946;
 }
 
 #mainNav ul {
-	list-style-type: none;
-	margin: 0;
-	padding: 0;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
 #mainNav li {
-	display: block;
-	float: left;
+  display: block;
+  float: left;
 }
 
 #mainNav ul li a {
-	padding: 20px 10px;
-	text-decoration: none;
-	color: #011946;
+  padding: 20px 10px;
+  text-decoration: none;
+  color: #011946;
 }
 
 #mainNav ul li a:hover {
-	color: #fff;
+  color: #fff;
 }
 
 #mainNav .current a {
-	background-color: #d4ebf2;
-	padding: 14px 10px;
-	color: #011946;
-	border: 6px solid transparent;
-	border-bottom-color: #011946;
+  background-color: #d4ebf2;
+  padding: 14px 10px;
+  color: #011946;
+  border: 6px solid transparent;
+  border-bottom-color: #011946;
 }
 
 h1 {
-	color: #fff;
-	font-family: 'Fira Sans', sans-serif;
+  color: #fff;
+  font-family: "Fira Sans", sans-serif;
 }
 
 h2 {
-	color: #011946;
+  color: white;
+  text-align: center;
 }
 
 footer {
-	border-top: 2px solid #011946;
-	text-align: left;
+  border-top: 2px solid #011946;
+  text-align: left;
 }
 
 footer ul {
-	padding: 0;
-	margin: 0;
-	list-style-type: none;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
 }
 
 footer li {
-	display: inline;
-	margin-right: 1em;
-	font-size: 125%;
+  display: inline;
+  margin-right: 1em;
+  font-size: 125%;
 }
 
 footer li a {
-	text-decoration: none;
-	color: #011946;
+  text-decoration: none;
+  color: #011946;
 }
 
 footer li a:visited {
-	color: #551A8B;
+  color: #551a8b;
 }
 
 p {
-	padding-bottom: 10px;
+  padding-bottom: 10px;
+}
+
+.container {
+  max-width: 100vw;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25px, 350px));
+  grid-gap: 35px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 46em;
+  padding: 40px 0;
+  
+}
+
+.card {
+  position:relative;
+  width: 300px;
+  height: 400px;
+  margin: 0 auto;
+  background: #000;
+  border-radius: 15px;
+  background: rgba(255, 255, 255, 0.15);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(8.5px);
+  -webkit-backdrop-filter: blur(8.5px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.card-hover :hover {
+	background: rgba(79, 209, 86, 0.15);
+}
+
+.card-title {
+	color: white;
+	text-align: center;
+	/* transform: rotate(25deg); */
+	padding: auto;
+	margin-top: 11em;
+	text-shadow: #000;
+	text-decoration: none;
+	pointer-events:none;
+}
+
+.card-description {
+	color: white;
+	text-align: center;
+	padding: auto;
+	margin-top: 11em;
+	text-shadow: #000;
+	text-decoration: none;
+	pointer-events:none;
+}
+
+a {
+	text-decoration: none;
 }
 
 /* end */
