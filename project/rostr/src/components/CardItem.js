@@ -4,11 +4,13 @@ import * as FaIcons from 'react-icons/fa';
 import * as IoIcons from 'react-icons/io';
 import * as TbIcons from 'react-icons/tb';
 import * as GoIcons from 'react-icons/go';
+import * as GiIcons from 'react-icons/gi';
 
 const CardItem = (params) => {
     const manifestId = params.iconManifestId;
     let Icon;
     const iconName = params.icon;
+    console.log(iconName);
     if(manifestId === 'fa'){
         Icon = FaIcons;
     }
@@ -21,6 +23,10 @@ const CardItem = (params) => {
     if(manifestId === 'go'){
         Icon = GoIcons;
     }
+    if(manifestId === 'gi'){
+        Icon = GiIcons;
+    }
+    console.log(Icon)
 
   return (
     <a href="javajam/index.html" class="card-hover">

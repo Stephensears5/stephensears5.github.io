@@ -1,29 +1,21 @@
 import Cards from "../components/Cards";
-import '../css/Homepage.css'
-
-const CardParams = [
-  {
-    id: 1,
-    title: "Create Event",
-    icon: "TbCirclePlus",
-    iconManifestId: "tb",
-    description: "Create an event so that others can join!",
-  },
-  {
-    id: 2,
-    title: "Search Events",
-    icon: "GoSearch",
-    iconManifestId: "go",
-    description: "Search for events in your area!",
-  },
-];
+import "../css/Homepage.css";
+import { Link } from "react-router-dom";
 
 const HomePage = () => {
-return(
-    <div className="background">
-        <Cards items={CardParams}/>
+  return (
+    <div className="grid-container">
+      <Link className="image-container-create" to="/create">
+          <div className="text-tile">Create</div>
+      </Link>
+      <Link className="image-container-find" to="/events">
+        <div className="text-tile">Find</div>
+      </Link>
+      <Link className="image-container-list" to="/list">
+        <div className="text-tile">List</div>
+      </Link>
     </div>
-)
+  );
 };
 
 export default HomePage;

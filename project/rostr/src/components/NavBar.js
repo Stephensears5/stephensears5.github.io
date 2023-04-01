@@ -1,20 +1,20 @@
 import '../css/NavBar.css'
+import {Link} from 'react-router-dom';
+import HomePage from '../views/homepage';
 
 const NavBar = () => {
     return (
         <ul id='nav-ul'>
             <div className='topnav-left'>
             <li id='nav-li'>
-               <a href=''>test1</a>
+                <Link to="/home">Home</Link>
+               {/* <a href=''>Home</a> */}
             </li>
             <li id='nav-li'>
-            <a href=''>test2</a>
+            <a href=''>My Events</a>
             </li>
             <li id='nav-li'>
-            <a href=''>test3</a> 
-            </li>
-            <li id='nav-li'>
-            <a href=''>test4</a>
+            <a href=''>Find Event</a> 
             </li>
             </div>
             <div className='topnav-right'>
