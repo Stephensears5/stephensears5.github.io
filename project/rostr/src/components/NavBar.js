@@ -14,7 +14,7 @@ const NavBar = () => {
             <a href=''>My Events</a>
             </li>
             <li id='nav-li'>
-            <a href=''>Find Event</a> 
+            <a href=''>Profile</a> 
             </li>
             </div>
             <div className='topnav-right'>

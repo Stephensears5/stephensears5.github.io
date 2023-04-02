@@ -8,10 +8,12 @@ import {
   Navigate,
 } from "react-router-dom";
 import Events from "./views/Events";
+import Banner from "./components/Banner";
 
 function App() {
   return (
     <Router>
+      <Banner/>
       <NavBar />
       <Routes>
         <Route path="/" element={<Navigate replace to="/home" />} />
